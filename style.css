@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.container{
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.serachbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 0.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.box i{
+   
+    font-size: 1.4rem;
+}
+.serachbar input{
+    margin-top: 20px;
+    width: 450px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.sun{
+    margin-top: 30px;
+}
+
+.display{
+    color: white;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.city-name{
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+.temp{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.bottom{
+    margin: 1rem 10rem 0 10rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left, .right{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt{
+    font-size: 2rem;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+.humid{
+    margin-left: 30px;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.box1{
+    margin-top: 30px;
+}
+
+.left img{
+    height: 70px;
+}
+
+@media (max-width: 768px) {
+    .serachbar input {
+        width: 50vw;
+        font-size: 1rem;
+    }
+
+    .box {
+        height: 60px;
+        width: 60px;
+    }
+
+    .bottom {
+        margin: 1rem 5rem 0 5rem;
+        display: flex;
+    }
+
+    .left, .right {
+        margin-bottom: 1rem;
+        
+    }
+
+    .left img, .right img{
+        height: 40px;
+    }
+
+    .txt {
+        font-size: 0.5rem;
+    }
+
+    .humid {
+        font-size: 2.5rem;
+    }
+}
+
+/* For Mobile Devices (width <= 480px) */
+@media (max-width: 480px) {
+    .serachbar input {
+        width: 60vw;
+        height: 40px;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        height: 50px;
+        width: 50px;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .sun img{
+        height: 300px;
+        margin-bottom: 0;
+    }
+    .display {
+        font-size: 1.5rem;
+    }
+
+    .city-name {
+        font-size: 2.5rem;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .bottom {
+      margin-left: 40px;
+      margin-top: 150px;
+        text-align: center;
+    }
+
+    .box1{
+        margin-left: 0;
+    }
+
+    .left img, .right img {
+        height: 30px;
+    }
+
+    .left img{
+        margin-left: 0;
+    }
+
+   .left{
+    margin-right: 20px;
+   }
+    .txt {
+        font-size: 0.8rem;
+    }
+
+    .humid {
+        font-size: 1.2rem;
+    }
+}
